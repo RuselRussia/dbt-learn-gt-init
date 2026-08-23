@@ -11,10 +11,8 @@ sources:
         columns:
           - name: id
             description: Unique identifier for the customer.
-
           - name: first_name
             description: Customer's first name.
-
           - name: last_name
             description: Customer's last name.
 
@@ -23,12 +21,11 @@ sources:
         columns:
           - name: id
             description: Unique identifier for the order.
-
           - name: user_id
             description: Identifier for the customer who placed the order.
-
           - name: order_date
             description: Date the order was placed.
-
           - name: status
             description: Current status of the order.
+
+
