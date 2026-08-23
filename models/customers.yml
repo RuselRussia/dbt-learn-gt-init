@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: customers
+    description: One row per customer, enriched with their first order date, most recent order date, and lifetime order count.
+    columns:
+      - name: customer_id
+        description: Primary key for the customer, sourced from the raw customers table.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: first_name
+        description: Customer's given name from the raw customers table.
+
+      - name: last_name
+        description: Customer's family name from the raw customers table.
+
+      - name: first_order_date
+        description: Date of the customer's earliest recorded order; null when the customer has not placed an order.
+
+      - name: most_recent_order_date
+        description: Date of the customer's latest recorded order; null when the customer has not placed an order.
+
+      - name: number_of_orders
+        description: Lifetime count of recorded orders for the customer; zero when the customer has not placed an order.
