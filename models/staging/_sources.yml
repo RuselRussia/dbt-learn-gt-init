@@ -1,0 +1,40 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: Raw application data for Jaffle Shop.
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: customers
+        description: Raw customer records.
+        columns:
+          - name: id
+            description: Unique identifier for the customer.
+            data_tests:
+              - unique
+              - not_null
+
+          - name: first_name
+            description: Customer's first name.
+
+          - name: last_name
+            description: Customer's last name.
+
+      - name: orders
+        description: Raw order records.
+        columns:
+          - name: id
+            description: Unique identifier for the order.
+            data_tests:
+              - unique
+              - not_null
+
+          - name: user_id
+            description: Identifier for the customer who placed the order.
+
+          - name: order_date
+            description: Date the order was placed.
+
+          - name: status
+            description: Current status of the order.

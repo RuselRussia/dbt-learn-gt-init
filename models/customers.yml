@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: customers
-    description: One row per customer with their order history summary.
+    description: One row per customer with a summary of their order history.
     columns:
       - name: customer_id
         description: Unique identifier for the customer.
@@ -17,10 +17,12 @@ models:
         description: Customer's last name.
 
       - name: first_order_date
-        description: Date of the customer's first order, if they have placed an order.
+        description: Date of the customer's first order, when they have placed an order.
 
       - name: most_recent_order_date
-        description: Date of the customer's most recent order, if they have placed an order.
+        description: Date of the customer's most recent order, when they have placed an order.
 
       - name: number_of_orders
-        description: Total number of orders placed by the customer.
+        description: Total number of orders the customer has placed.
+
+
