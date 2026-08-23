@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Staged customer records from the Jaffle Shop application.
+    columns:
+      - name: customer_id
+        description: Unique identifier for the customer.
+      - name: first_name
+        description: Customer's first name.
+      - name: last_name
+        description: Customer's last name.

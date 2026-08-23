@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: Staged order records from the Jaffle Shop application.
+    columns:
+      - name: order_id
+        description: Unique identifier for the order.
+        data_tests:
+          - unique 
+          - not_null 
+      - name: customer_id
+        description: Unique identifier for the customer who placed the order.
+      - name: order_date
+        description: Date the order was placed.
+      - name: status
+        description: Current status of the order.
