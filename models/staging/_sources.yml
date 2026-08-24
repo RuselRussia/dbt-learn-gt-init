@@ -16,6 +16,7 @@ sources:
           - name: last_name
             description: Customer's last name.
 
+
       - name: orders
         description: Raw order records.
         columns:
@@ -27,5 +28,3 @@ sources:
             description: Date the order was placed.
           - name: status
             description: Current status of the order.
-
-
